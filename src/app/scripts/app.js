@@ -3,7 +3,7 @@ import { readIcons } from './icons'
 import { initializeDarkmode, initializeTheme } from './themes'
 
 import '../../assets/styles/main.sass'
-import '../../assets/images/danlgz.png'
+import '../../assets/images/me.png'
 
 
 readIcons();

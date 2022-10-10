@@ -9,8 +9,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist')
     },
     module: {
-        rules: [
-            {
+        rules: [{
                 test: /\.s[ac]ss$/i,
                 use: [
                     // Creates `style` nodes from JS strings
@@ -39,26 +38,24 @@ module.exports = {
             },
             {
                 test: /\.(png|jpe?g|gif|svg|webp|ico)$/i,
-                use: [
-                  {
+                use: [{
                     loader: 'file-loader',
                     options: {
-                      name(file) {
-                        // if (argv.mode === 'production') {
-                        //   return '[contenthash].[ext]';
-                        // }
-        
-                        return '[name].[ext]';
-                      },
+                        name(file) {
+                            // if (argv.mode === 'production') {
+                            //   return '[contenthash].[ext]';
+                            // }
+
+                            return '[name].[ext]';
+                        },
                     }
-                  },
-                ],
+                }, ],
             },
         ],
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Daniel Lucas',
+            title: 'Esteban Hernandez',
             filename: 'index.html',
             template: path.resolve(__dirname, 'src/app/app.html'),
             minify: true,
